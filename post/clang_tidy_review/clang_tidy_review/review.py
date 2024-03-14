@@ -39,7 +39,7 @@ def main():
     parser.add_argument(
         "--clang_tidy_binary",
         help="clang-tidy binary",
-        default="clang-tidy-14",
+        default="clang-tidy-15",
         type=pathlib.Path,
     )
     parser.add_argument(
