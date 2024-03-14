@@ -14,6 +14,6 @@ RUN apt update && \
 
 COPY . /clang_tidy_review/
 
-RUN python3 -m pip install --break-system-packages /clang_tidy_review/post/clang_tidy_review
+RUN python3 -m pip install /clang_tidy_review/post/clang_tidy_review
 
 ENTRYPOINT ["review"]
