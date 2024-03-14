@@ -14,6 +14,7 @@ RUN apt update && \
 
 COPY . /clang_tidy_review/
 
+RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install /clang_tidy_review/post/clang_tidy_review
 
 ENTRYPOINT ["review"]
